@@ -3,7 +3,7 @@
 A singly linked list library.
 
 ## API
-This library can be used to dynamically store objects. It has a set of functions to interract with the linked list. The functions will take care of memory management. Each function returns zero on success of execution otherwise an error code will be returned.
+This library can be used to dynamically store objects. It has a set of functions to interact with the linked list. The functions will take care of memory management. Each function returns zero on success of execution otherwise an error code will be returned.
 
 | Label               	| Error code 	|
 |---------------------	|------------	|
@@ -15,10 +15,10 @@ This library can be used to dynamically store objects. It has a set of functions
 | ERROR_INVALID_INDEX 	| -6         	|
 | ERROR_INVALID_ITEM  	| -7         	|
 
-### LinkedList* ListInitialise(size_t elementSize)
-Initialise a linked list with the element size of a given type.
+### LinkedList* ListInitialize(size_t elementSize)
+Initialize a linked list with the element size of a given type.
 ```c
-LinkedList* list = ListInitialise(sizeof(int));
+LinkedList* list = ListInitialize(sizeof(int));
 ```
 
 ### int ListDestroy(LinkedList** list)
