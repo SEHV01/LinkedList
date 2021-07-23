@@ -1,4 +1,4 @@
-add_executable(LinkedListTest main.c)
+add_executable(LinkedListTest)
 
 target_sources(LinkedListTest
     PRIVATE
