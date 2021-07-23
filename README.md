@@ -2,6 +2,31 @@
 
 A singly linked list library.
 
+## Getting the source and running the tests
+
+We first need to get the source code. The projects has the [Unity Test] (https://github.com/ThrowTheSwitch/Unity) as a sub module for its unit test.
+-	```
+	git clone --recursive https://github.com/SEHV01/LinkedList.git
+	cd ./LinkedList
+	```
+-	```
+	mkdir build
+	cd ./build
+	```
+-	```
+	cmake ..
+	cmake --build . --target LinkedListTest
+	```
+-	```
+	./test/LinkedListTest
+	```
+
+## Using the library in your project
+To use this library in your project you need to link the library to your projects. Add the following line to your CMakeLists.txt:
+```CMake
+target_link_libraries(<YOUR_TARGET> PRIVATE LinkedList)
+```
+
 ## API
 This library can be used to dynamically store objects. It has a set of functions to interact with the linked list. The functions will take care of memory management. Each function returns zero on success of execution otherwise an error code will be returned.
 
