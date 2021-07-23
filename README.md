@@ -4,7 +4,7 @@ A singly linked list library.
 
 ## Getting the source and running the tests
 
-We first need to get the source code. The projects has the [Unity Test] (https://github.com/ThrowTheSwitch/Unity) as a sub module for its unit test.
+We first need to get the source code. The projects has the [Unity Test](https://github.com/ThrowTheSwitch/Unity) project as a sub module for its unit tests.
 -	```
 	git clone --recursive https://github.com/SEHV01/LinkedList.git
 	cd ./LinkedList
