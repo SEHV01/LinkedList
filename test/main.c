@@ -1,6 +1,6 @@
 #include "LinkedList/LinkedList.h"
+#include "unity.h"
 #include <stdlib.h>
-#include <unity.h>
 
 #define MY_RUN_TEST(func) RUN_TEST(func, 0)
 
