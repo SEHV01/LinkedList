@@ -1,6 +1,6 @@
-#include <Unity/unity.h>
-#include <LinkedList/LinkedList.h>
+#include "LinkedList/LinkedList.h"
 #include <stdlib.h>
+#include <unity.h>
 
 #define MY_RUN_TEST(func) RUN_TEST(func, 0)
 
@@ -38,7 +38,7 @@ void ListDestroy_LinkedList_ReturnsZeroAndLinkedListNull(void)
 	int result = ListDestroy(&list);
 
 	TEST_ASSERT_EQUAL(0, result);
-	TEST_ASSERT_NULL(list)
+	TEST_ASSERT_NULL(list);
 }
 
 void ListCount_IllegalParameters_ReturnsErrorCode(void)
@@ -671,7 +671,7 @@ void ListReplace_LinkedListIndexAndReplaceItem_ReplacesItemAtIndexAndReturnsZero
 
 int main(void)
 {
-	UnityBegin();
+	UNITY_BEGIN();
 
 	MY_RUN_TEST(ListInitialise_ElementSize_ReturnsListAndCountZero);
 	MY_RUN_TEST(ListDestroy_IllegalParameters_ReturnsErrorCode);
@@ -711,5 +711,5 @@ int main(void)
 	MY_RUN_TEST(ListReplace_IllegalParameters_ReturnsErrorCode);
 	MY_RUN_TEST(ListReplace_LinkedListIndexAndReplaceItem_ReplacesItemAtIndexAndReturnsZero);
 
-	return UnityEnd();
+	return UNITY_END();
 }
