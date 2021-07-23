@@ -26,7 +26,7 @@ To use this library in your project, you need to add this directory to your top 
 ```Cmake
 add_subdirectory(<PATH_TO_LINKEDLIST_DIRECTORY>)
 ```
-You will also need to link the library to your project in CMakeLists.txt where the library is used. 
+You will also need to link the library to your project in the CMakeLists.txt where the library is used. 
 ```CMake
 target_link_libraries(<YOUR_TARGET> PRIVATE LinkedList)
 ```
