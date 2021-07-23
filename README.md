@@ -22,7 +22,11 @@ We first need to get the source code. The projects has the [Unity Test](https://
 	```
 
 ## Using the library in your project
-To use this library in your project you need to link the library to your project. Add the following line to your CMakeLists.txt:
+To use this library in your project, you need to add this directory to your top level CMakeLists.txt as a subdirectory.
+```Cmake
+add_subdirectory(<PATH_TO_LINKEDLIST_DIRECTORY>)
+```
+You will also need to link the library to your project in the CMakeLists.txt where the library is used. 
 ```CMake
 target_link_libraries(<YOUR_TARGET> PRIVATE LinkedList)
 ```
