@@ -22,7 +22,7 @@ We first need to get the source code. The projects has the [Unity Test](https://
 	```
 
 ## Using the library in your project
-To use this library in your project you need to link the library to your projects. Add the following line to your CMakeLists.txt:
+To use this library in your project you need to link the library to your project. Add the following line to your CMakeLists.txt:
 ```CMake
 target_link_libraries(<YOUR_TARGET> PRIVATE LinkedList)
 ```
@@ -116,7 +116,7 @@ int* value = 0;
 ListGetItem(list, 0, (void*)&value);
 ```
 
-### int ListGetIndex(LinkedList* list, size_t* index, void* item, int (*compar)(const void*, const void*))
+### int ListGetIndex(LinkedList* list, size_t* index, void* item, int (\*compar)(const void*, const void*))
 Get the index of a given item of a linked list. The user must define a compare function that returns zero when two items are identical.
 ```c
 static int CompareItems(const void* itemOne, const void* itemTwo)
